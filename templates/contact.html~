@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+            <form method="POST" action="/processform">
+                <input type="text" name="email">
+                </br>
+                <input type="submit" value="Give it to me!"> 
+            </form>
+{% endblock %}

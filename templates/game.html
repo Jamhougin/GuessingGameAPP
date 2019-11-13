@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+            <H1>Please guess a number 1-1000</H1>
+            <h2>{{data}}</h2>
+            <form method="POST" action="/guessnum">
+                <input type="number" name="guessed">
+                </br>
+                <input type="submit" value="Guess!"> 
+            </form>
+{% endblock %}

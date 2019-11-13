@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+            
+    <h2>Congratulations, You Guessed It!!</h2>
+
+    <h2>The answer was {{data}}</h2>
+    <h2>It Took You {{data2}} Seconds</h2>
+    <h2>It Took You {{data3}} Tries	</h2>
+    <form method="POST" action="/nameentered">
+        <input type="text" name="name">
+        </br>
+        <input type="submit" value="Send Name"> 
+    </form>
+
+{% endblock %}

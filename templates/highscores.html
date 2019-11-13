@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+    <table>
+    <tr>
+        <th> Place </th>
+        <th> Name </th>
+        <th> Tries </th>
+        <th> Time(s) </th>
+    {%for i in data%}
+    <tr>    <td>{{loop.index}}</td>
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+    </tr>
+    {% endfor%}
+    </table>
+    <a href = "/"><button>New Game</button></a>
+
+{% endblock %}

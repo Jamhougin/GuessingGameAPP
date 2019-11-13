@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block the_body %}
+            
+    <h2>Possible Pattern Matches</h2>
+
+    <ul>
+        {% for d in data %}
+            <li>{{ d }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
