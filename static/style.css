@@ -1,0 +1,13 @@
+html {
+    background: #ccffff;
+    background-image: linear_gradient(270deg, rgb(186, 200, 252) 0%, rgb(216, 221, 221) 100%);
+    font-family: "Arial", sans-serif;
+    color: #041451;
+}
+
+.button {
+    background-color: #99ffff
+}
+
+
+

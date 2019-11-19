@@ -7,14 +7,16 @@
         <th> Name </th>
         <th> Tries </th>
         <th> Time(s) </th>
-    {%for i in data%}
+    {%for i in data %}
+        {% if i[0] != "qazwsxedc" %}
     <tr>    <td>{{loop.index}}</td>
             <td>{{i[0]}}</td>
             <td>{{i[1]}}</td>
             <td>{{i[2]}}</td>
     </tr>
+        {% endif %}
     {% endfor%}
     </table>
-    <a href = "/"><button>New Game</button></a>
+    <a href = "/"><button class="button">New Game</button></a>
 
 {% endblock %}

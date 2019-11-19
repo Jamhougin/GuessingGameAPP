@@ -14,7 +14,7 @@ def landing_page():
     session["starttime"] = time.perf_counter()
     session["numOfTries"] = 0
     return render_template(
-        "game.html", the_title=session["randomNum"], data=session["gameH2"]
+        "game.html", the_title="Guessing Game", data=session["gameH2"]
     )
 
 
